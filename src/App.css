@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+#topRow {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#presentation {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+footer {
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grid-container {
+  height: 1500px;
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-columns: auto auto;
+  background-color: lightblue;
+  padding: 50px;
+  gap: 50px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 14px;
+  font-size: 15px;
+  text-align: center;
+}
