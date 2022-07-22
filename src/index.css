@@ -1,13 +1,111 @@
+/* base styles */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+a{
+  /* link non sottolineati */
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, p {
+  color: #000;
+  /* cornice di default dei titoli */
+  padding-bottom: 30px;
+}
+/* classi di default che utilizzeremo all'interno del design per dare una dimensione ai titoli */
+.big-text{ font-size: 70px; text-align: center;}
+.med-text{ font-size: 40px; }
+.normal-text{ font-size: 20px; }
+.small-text{ font-size: 14px; }
+
+.intro-text {
+  text-transform: uppercase;
+  font-size: 10;
+  font-weight: bold;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* button style */
+.buttom {
+  padding: 18px 28px; /*18 sopra/sotto, 28 dx/sx*/
+  background: #316bff;
+  color: #fff;
+  display: inline-block;
 }
+/* header */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px;
+  display: flex;
+  max-width: 1350px;
+  
+}
+
+.header::after {
+content: "";
+background-color: #8EC5FC;
+background-image: linear-gradient(80deg, #8EC5FC 0%, #E0C3FC 100%);
+opacity: 0.5;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+position: absolute;
+z-index: -1;   
+}
+
+video {
+  /* override other styles to make responsive */
+  width: 100%    !important;
+  height: 50%   !important;
+}
+
+/*.logo {}*/
+
+.menu {
+  width: 77%;
+}
+.menu li {
+  display: inline-block;
+}
+.menu li a{
+  color: #fff;
+  padding: 15px;
+  display: block;
+}
+/*.cta {}*/
+
+/* main content at the top of the page */
+.hero {
+  height: 600px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background:linear-gradient(0deg, rgba(0,0,0,.2), rgba(0,0,0,0.9));
+  background-size: cover;
+}
+
+.hero_content {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0px auto;
+  padding: 30px;
+}
+
+.banner__content h1, .banner__content p{
+  color: #fff;
+}
+table, th, td {
+  border:1px solid black;
+}
+/* *
+*::before
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} */
