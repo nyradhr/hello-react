@@ -6,7 +6,6 @@ function MyComponent({clientName, goldUser, onSubmit}) { //destructuring
             <p>Io sono il cliente {clientName}</p>
             <p>Sono un utente {goldUser?"Gold":"Standard"}</p>
             <button onClick={() => onSubmit(result)}>mainSearch</button>
-
         </section>
     );
 }

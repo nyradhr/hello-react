@@ -4,12 +4,18 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+		integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--<link rel="stylesheet" type="text/css" href="index.css">-->
+    
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,11 +30,73 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Bootcamp</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    
+    <div class="header">
+      <div class="logo">
+        <img src="./img/logo.png" alt="logo" width="150" height="100" >
+      </div>
+
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Editions</a></li>
+          <li><a href="#">Courses</a></li>
+        </ul>
+
+        <div  class="cta">
+          <a href="#" class="buttom">Contacts</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="hero_content">
+        <video  autoplay id="heroVideo" loop muted>
+          <source src="./vid/video.mp4" type="video/mp4"/>
+        </video>
+        <!--<a href="#" class="buttom">Discover More</a>-->
+      </div>
+      <div>
+        <p class="intro-text">Welcome to the Bootcamp for Backend Java Developers <br> by Workfully & Accenture!</p>
+        <h1 class="big-text">BOOTCAMP</h1>
+      </div>
+    </div>
+      <!--<button onClick={loadData}>Load Data from Server</button>-->
+      <!-- invoke query with num=4 for latestNEditions()-->
+      <!-- <table style="width:80%">
+        <tr>
+          <th>Course</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+            <th>Financing</th>
+            <th>Tutor</th>
+            <th>Cost</th>
+            <th>Code</th>
+        </tr>
+        <tr>
+          <td>Java For Beginners</td>
+            <td>01-04-2020</td>
+            <td>25-06-2020</td>
+            <td>Public</td>
+            <td>Andrea Di Giugno</td>
+            <td>800</td>
+           <td>A5F7G3</td>
+        </tr>
+        <tr>
+          <td>WTF is a Monad? CRustaceans Assemble!</td>
+          <td>13-05-2022</td>
+          <td>22-07-2022</td>
+          <td>Private</td>
+          <td>Franco Mattei</td>
+          <td>1500</td>
+          <td>R7B4L9</td>
+        </tr>
+        </table>  -->
+    
+    <div id="root">
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
